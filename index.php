@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+    <link href="style.css" rel="stylesheet"> 
     <title>CRUD com Ajax</title>
 </head>
 
@@ -25,17 +25,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
     -->
     <nav class="bg-dark text-light">
-        <ul class="nav nav-pills">
+        <ul class="nav nav-pills" id="menu">
             <li class="nav-item nav-item px-md-2">
-                <a class="nav-link active" aria-current="page" href="#">Início</a>
+                <a class="nav-link active" aria-current="page" id="tutulo" href="#">Sistema</a>
             </li>
             <li class="nav-item dropdown nav-item px-md-2">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Cadastro</a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" id="departamento" href="#">Departamentos</a></li>
-                    <li><a class="dropdown-item" href="#">Categorias</a></li>
-                    <li><a class="dropdown-item" href="#">Produtos</a></li>
-                    <li><a class="dropdown-item" href="#">Atributos</a></li>
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="demo" href="#" role="button" aria-expanded="false">Cadastro</a>
+                <ul class="dropdown-menu" id="ul">
+                    <li><a class="dropdown-item" id="Departamento" href="#">Departamentos</a></li>
+                    <li><a class="dropdown-item" href="#" id="Categoria">Categorias</a></li>
+                    <li><a class="dropdown-item" href="#" id="Produtos">Produtos</a></li>
+                    <li><a class="dropdown-item" href="#" id="Atributos">Atributos</a></li>
                 </ul>
             </li>
             <li class="nav-item px-md-2">
