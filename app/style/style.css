@@ -1,0 +1,10 @@
+.div-wrapper {
+    margin-top: 40px;
+    border: 2px #ddd;
+    border-radius: 8px;
+}
+ 
+.div-to-align {
+    width: 75%;
+    padding: 40px 20px;
+}
