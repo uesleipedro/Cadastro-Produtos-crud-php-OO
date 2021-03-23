@@ -32,7 +32,7 @@
             <li class="nav-item dropdown nav-item px-md-2">
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="menu" href="#" role="button" aria-expanded="false">Cadastro</a>
                 <ul class="dropdown-menu" id="ul">
-                    <li><a class="dropdown-item" id="lista_grupo" href="index.php?pagina=lista_grupo">Grupo</a></li>
+                    <li><a class="dropdown-item" id="lista_grupo" href="index.php?pagina=grupo/lista_grupo">Grupo</a></li>
                     <li><a class="dropdown-item" href="index.php?pagina=marca" id="Marca">Marca</a></li>
                     <li><a class="dropdown-item" href="#" id="Produto">Produto</a></li>
                     <li><a class="dropdown-item" href="#" id="Estoque">Estoque</a></li>

@@ -8,7 +8,7 @@
                     <div class="row">
                         <h2>Grupos cadastrados</h2>
                         <section>
-                            <a href="index.php?pagina=cadastrar_grupo">
+                            <a href="index.php?pagina=grupo/cadastrar_grupo">
                                 <button class="btn btn-success" id="cadastro_groupo">Cadastrar novo Grupo</button>
                             </a>
                         </section>

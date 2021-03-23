@@ -18,7 +18,7 @@
                         </div>
                         <div class="form-group mt-3">
                             <button type="submit" class="btn btn-success">Salvar</button>
-                            <a class="btn btn-danger" href="/index.php?pagina=lista_grupo">Cancelar</a>
+                            <a class="btn btn-danger" href="/index.php?pagina=grupo/lista_grupo">Cancelar</a>
                         </div>
                     </form>
 

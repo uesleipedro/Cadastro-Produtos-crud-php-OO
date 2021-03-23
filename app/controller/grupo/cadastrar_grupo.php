@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . '/../model/Grupo.php';
+include __DIR__ . '/../../model/Grupo.php';
 
 define('TITLE', 'Cadastrar Grupo');
 
@@ -12,8 +12,8 @@ if (isset($_POST['nome_grupo'])) {
 
     $objGrupo->cadastrar();
 
-    header('location: ../../index.php?pagina=lista_grupo&status=success');
+    header('location: ../../index.php?pagina=grupo/lista_grupo&status=success');
     exit;
 }
 
-include __DIR__ . '/../view/grupo/cadastro_grupo.php';
+include __DIR__ . '/../../view/grupo/cadastro_grupo.php';

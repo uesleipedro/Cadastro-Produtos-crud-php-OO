@@ -1,14 +1,14 @@
 <?php
 
-include __DIR__ . '/../model/Grupo.php';
+include __DIR__ . '/../../model/Grupo.php';
 
 if (isset($_GET['id_grupo'])) {
     try {
         $objGrupo = Grupo::getGrupo($_GET['id_grupo']);
         $objGrupo->excluir();
-        header('location: index.php?pagina=lista_grupo&status=success');
+        header('location: index.php?pagina=grupo/lista_grupo&status=success');
     } catch (\Throwable $th) {
-        header('location: index.php?pagina=lista_grupo&status=error');
+        header('location: index.php?pagina=grupo/lista_grupo&status=error');
     }
 }
 
@@ -32,10 +32,10 @@ foreach ($grupos as $grupo) {
             <td>' . $grupo->id_grupo . '</td>
                 <td>' . $grupo->nome_grupo . '</td>
                 <td>
-                    <a href="index.php?pagina=editar_grupo&id_grupo=' . $grupo->id_grupo . ' ">
+                    <a href="index.php?pagina=grupo/editar_grupo&id_grupo=' . $grupo->id_grupo . ' ">
                         <button type="button" class="btn btn-primary">Editar</button>
                     </a>
-                    <a href="index.php?pagina=lista_grupo&id_grupo=' . $grupo->id_grupo . ' ">
+                    <a href="index.php?pagina=grupo/lista_grupo&id_grupo=' . $grupo->id_grupo . ' ">
                         <button type="button" class="btn btn-danger" 
                         onclick="return window.confirm(\'Deseja realmente excluir o grupo ' . $grupo->nome_grupo . '?\')" >Excluir</button>
                     </a> 
@@ -50,4 +50,4 @@ $resultados = strlen($resultados) ? $resultados :
 
 
 
-include __DIR__ . '/../view/grupo/lista_grupo.php';
+include __DIR__ . '/../../view/grupo/lista_grupo.php';
