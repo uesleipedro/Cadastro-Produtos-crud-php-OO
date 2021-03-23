@@ -5,20 +5,20 @@
 
                 <div class="div-to-align">
 
-                    <h2>Cadastro de grupo</h2>
+                    <h2><?=TITLE?></h2>
 
                     <form class="form-inline" method="post">
                         <div class="form-group">
                             <label class="sr-only" for="id">Código:</label>
-                            <input type="number" class="form-control" placeholder="0" id="id" disabled="disable">
+                            <input type="number" class="form-control" placeholder="0" id="id" disabled="disable" value="<?= $objGrupo->id_grupo ?>">
                         </div>
                         <div class="form-group">
                             <label class="sr-only" for="nome_grupo">Nome do Grupo</label>
-                            <input type="text" class="form-control" name="nome_grupo" id="nome_grupo">
+                            <input type="text" class="form-control" name="nome_grupo" id="nome_grupo" value="<?= $objGrupo->nome_grupo ?>">
                         </div>
-
                         <div class="form-group mt-3">
-                            <button type="submit" class="btn btn-success">Cadastrar</button>
+                            <button type="submit" class="btn btn-success">Salvar</button>
+                            <a class="btn btn-danger" href="/index.php?pagina=lista_grupo">Cancelar</a>
                         </div>
                     </form>
 
