@@ -1,0 +1,30 @@
+<div class="section-1-container section-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-10 offset-1 col-lg-8 offset-lg-2 div-wrapper d-flex justify-content-center align-items-center bg-dark text-light">
+
+                <div class="div-to-align">
+
+                    <h2><?=TITLE?></h2>
+
+                    <form class="form-inline" method="post">
+                        <div class="form-group">
+                            <label class="sr-only" for="id">Código:</label>
+                            <input type="number" class="form-control" placeholder="0" id="id" disabled="disable" value="<?=$objMarca->id_marca?>">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="nome_marca">Nome da Marca</label>
+                            <input type="text" class="form-control" name="nome_marca" id="nome_marca" value="<?=$objMarca->nome_marca?>">
+                        </div>
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-success">Salvar</button>
+                            <a class="btn btn-danger" href="/index.php?pagina=marca/lista_marca">Cancelar</a>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
