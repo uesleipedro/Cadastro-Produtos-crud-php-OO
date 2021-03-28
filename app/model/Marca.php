@@ -1,8 +1,8 @@
 <?php
 
-include __DIR__ . '/../Db/Database.php';
+require_once __DIR__ . '/../Db/Database.php';
 
-class marca
+class Marca
 {
     public $id_marca;
     public $nome_marca;
@@ -32,14 +32,14 @@ class marca
         return (new Database('marca'))->delete('id_marca =' . $this->id_marca);
     }
 
-    public static function getMarcas($where = null, $order = null, $limit = null){
-        return (new Database('marca'))->select($where, $order, $limit)
+    public static function getMarcas($fields = null, $where = null, $join = null, $order = null, $limit = null){
+        return (new Database('marca'))->select($fields, $where, $join, $order, $limit)
             ->fetchAll(PDO::FETCH_CLASS, self::class);
     }
 
     public static function getMarca($id_marca)
     {
-        return (new Database('marca'))->select('id_marca = ' . $id_marca)
+        return (new Database('marca'))->select('*', 'id_marca = ' . $id_marca)
             ->fetchObject(self::class);
     }
 }

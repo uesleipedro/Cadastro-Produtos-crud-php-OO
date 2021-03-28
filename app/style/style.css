@@ -5,6 +5,10 @@
 }
  
 .div-to-align {
-    width: 75%;
+    width: 95%;
     padding: 40px 20px;
+}
+
+.bg-tab {
+    background-color: grey;
 }

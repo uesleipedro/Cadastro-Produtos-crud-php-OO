@@ -24,7 +24,7 @@ if (isset($_GET['status'])) {
     }
 }
 
-$grupos = Grupo::getGrupos(); 
+$grupos = Grupo::getGrupos('id_grupo, nome_grupo'); 
 $resultados = '';
 foreach ($grupos as $grupo) {
     $resultados .= 

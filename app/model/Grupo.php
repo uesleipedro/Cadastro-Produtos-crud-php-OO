@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . '/../Db/Database.php';
+require_once __DIR__ . '/../Db/Database.php';
 
 class Grupo
 {
@@ -32,14 +32,14 @@ class Grupo
         return (new Database('grupo'))->delete('id_grupo =' . $this->id_grupo);
     }
 
-    public static function getGrupos($where = null, $order = null, $limit = null){
-        return (new Database('grupo'))->select($where, $order, $limit)
+    public static function getGrupos($fields = null, $where = null, $join = null, $order = null, $limit = null){
+        return (new Database('grupo'))->select($fields, $where, $join, $order, $limit)
             ->fetchAll(PDO::FETCH_CLASS, self::class);
     }
 
     public static function getGrupo($id_grupo)
     {
-        return (new Database('grupo'))->select('id_grupo = ' . $id_grupo)
+        return (new Database('grupo'))->select('*','id_grupo = ' . $id_grupo)
             ->fetchObject(self::class);
     }
 }

@@ -8,11 +8,11 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link href="app/style/style.css" rel="stylesheet"> 
+    <link href="app/style/style.css" rel="stylesheet">
     <title>CRUD com Ajax</title>
 </head>
 
-<body>
+<body class="bg-light">
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -34,19 +34,13 @@
                 <ul class="dropdown-menu" id="ul">
                     <li><a class="dropdown-item" id="lista_grupo" href="index.php?pagina=grupo/lista_grupo">Grupo</a></li>
                     <li><a class="dropdown-item" href="index.php?pagina=marca/lista_marca" id="Marca">Marca</a></li>
-                    <li><a class="dropdown-item" href="#" id="Produto">Produto</a></li>
-                    <li><a class="dropdown-item" href="#" id="Estoque">Estoque</a></li>
+                    <li><a class="dropdown-item" href="index.php?pagina=produto/lista_produto" id="Produto">Produto</a></li>
                 </ul>
             </li>
             <li class="nav-item px-md-2">
-                <input type="text" class="form-control" id="pesquisa" placeholder="Pesquisa">
+                <a class="nav-link" id="estoque" role="button" aria-expanded="false" href="index.php?pagina=estoque/lista_estoque" id="Estoque">Estoque</a>
             </li>
-            <li class="nav-item px-md-2">
-                <a href="#" type="button" id="" class="btn btn-primary" onclick="pesquisar(0);">Pesquisar </a>
-            </li>
-            <li class="nav-item px-md-2">
-                <a href="#" type="button" id="" class="btn btn-primary" onclick="monta_formulario(0);">Novo </a>
-            </li>
+    
         </ul>
     </nav>
-        <div id="corpo" class="container">
+    <div id="corpo" class="container">

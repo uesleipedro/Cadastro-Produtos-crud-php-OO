@@ -6,10 +6,10 @@
 
                 <div class="div-to-align">
                     <div class="row">
-                        <h2>Marcas cadastradas</h2>
+                        <h2>Produtos cadastrados</h2>
                         <section>
-                            <a href="index.php?pagina=marca/cadastrar_marca">
-                                <button class="btn btn-success" id="cadastro_marca">Cadastrar nova Marca</button>
+                            <a href="index.php?pagina=produto/cadastrar_produto">
+                                <button class="btn btn-success" id="cadastro_produto">Cadastrar novo Produto</button>
                             </a>
                         </section>
                     </div>
@@ -18,6 +18,8 @@
                         <thead>
                             <tr>
                                 <th scope="col">Id</th>
+                                <th scope="col">Produto</th>
+                                <th scope="col">Grupo</th>
                                 <th scope="col">Marca</th>
                                 <th scope="col">Ações</th>
                             </tr>

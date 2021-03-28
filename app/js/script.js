@@ -1,5 +1,8 @@
 $(document).ready(function () {
+
 });
+
+
 /*
     if (document.getElementById("menu").innerHTML == "Cadastro") {
         $("#corpo").load('app/view/default.php');

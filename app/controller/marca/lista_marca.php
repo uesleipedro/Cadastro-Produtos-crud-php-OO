@@ -24,7 +24,7 @@ if (isset($_GET['status'])) {
     }
 }
 
-$marcas = Marca::getMarcas(); 
+$marcas = Marca::getMarcas('id_marca, nome_marca'); 
 $resultados = '';
 foreach ($marcas as $marca) {
     $resultados .= 
