@@ -4,7 +4,7 @@ class Database {
     const HOST = 'localhost';
     const NAME = 'sempre';
     const USER = 'root';
-    const PASS = 'joiodotrigo';
+    const PASS = '';
 
     private $table;
     private $connection;
